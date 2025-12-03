@@ -21,7 +21,7 @@ async function fetchInputData(url) {
 
 /**
  * @param {string} input
- * @returns {{leftList: number[], rightList: number[]}}
+ * @returns {{leftList: Number[], rightList: Number[]}}
  */
 function parseAndSortInput(input) {
 	const lines = input.trim().split("\n");
@@ -41,9 +41,9 @@ function parseAndSortInput(input) {
 }
 
 /**
- * @param {number[]} leftList
- * @param {number[]} rightList
- * @returns {number}
+ * @param {Number[]} leftList
+ * @param {Number[]} rightList
+ * @returns {Number}
  */
 function calculateTotalDistance(leftList, rightList) {
 	let totalDistance = 0;
@@ -54,9 +54,9 @@ function calculateTotalDistance(leftList, rightList) {
 }
 
 /**
- * @param {number[]} leftList
- * @param {number[]} rightList
- * @returns {number}
+ * @param {Number[]} leftList
+ * @param {Number[]} rightList
+ * @returns {Number}
  */
 function calculateSimilarityScore(leftList, rightList) {
 	const rightCountMap = new Map();

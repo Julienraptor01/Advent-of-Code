@@ -21,7 +21,7 @@ async function fetchInputData(url) {
 
 /**
  * @param {string} input
- * @returns {Array<{min: number, max: number}>}
+ * @returns {Array<{min: Number, max: Number}>}
  */
 function parseAndSortInput(input) {
 	const ranges = input.trim().split(",").map(range => range.split("-")).map(([min, max]) => ({min: Number(min), max: Number(max)})).sort((a, b) => (a.min - b.min) || (a.max - b.max));
@@ -30,9 +30,9 @@ function parseAndSortInput(input) {
 
 /**
  * @param {string} halfString
- * @param {number} halfLength
+ * @param {Number} halfLength
  * @param {boolean} isMin
- * @returns {number}
+ * @returns {Number}
  */
 function calculateHalfEven(halfString, halfLength, isMin) {
 	const upperHalf = Number(halfString.substring(0, halfLength));
@@ -42,16 +42,16 @@ function calculateHalfEven(halfString, halfLength, isMin) {
 }
 
 /**
- * @param {number} length
- * @returns {number}
+ * @param {Number} length
+ * @returns {Number}
  */
 function calculateHalfOdd(length) {
 	return Math.pow(10, Math.floor(length / 2));
 }
 
 /**
- * @param {Array<{min: number, max: number}>} ranges
- * @returns {number}
+ * @param {Array<{min: Number, max: Number}>} ranges
+ * @returns {Number}
  */
 function calculateInvalidIdsSum(ranges) {
 	let totalSum = 0;
@@ -73,8 +73,8 @@ function calculateInvalidIdsSum(ranges) {
 }
 
 /**
- * @param {Array<{min: number, max: number}>} ranges
- * @returns {number}
+ * @param {Array<{min: Number, max: Number}>} ranges
+ * @returns {Number}
  */
 function calculateMoreInvalidIdsSum(ranges) {
 	const regex = /^(\d+)\1+$/;

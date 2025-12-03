@@ -21,7 +21,7 @@ async function fetchInputData(url) {
 
 /**
  * @param {string} input
- * @returns {Array<Array<number>>}
+ * @returns {Array<Array<Number>>}
  */
 function parseInput(input) {
 	const presents = input.trim().split("\n").map(line => line.split("x").map(Number));
@@ -29,8 +29,8 @@ function parseInput(input) {
 }
 
 /**
- * @param {Array<Array<number>>} presents
- * @returns {number}
+ * @param {Array<Array<Number>>} presents
+ * @returns {Number}
  */
 function calculateTotalWrappingPaper(presents) {
 	let totalPaper = 0;
@@ -44,8 +44,8 @@ function calculateTotalWrappingPaper(presents) {
 }
 
 /**
- * @param {Array<Array<number>>} presents
- * @returns {number}
+ * @param {Array<Array<Number>>} presents
+ * @returns {Number}
  */
 function calculateTotalRibbon(presents) {
 	let totalRibbon = 0;

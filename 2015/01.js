@@ -21,7 +21,7 @@ async function fetchInputData(url) {
 
 /**
  * @param {string} input
- * @returns {number}
+ * @returns {Number}
  */
 function calculateFinalFloor(input) {
 	let floor = 0;
@@ -37,7 +37,7 @@ function calculateFinalFloor(input) {
 
 /**
  * @param {string} input
- * @returns {number}
+ * @returns {Number}
  */
 function findBasementEnterPosition(input) {
 	for (let i = 0, floor = 0; i < input.length; i++) {

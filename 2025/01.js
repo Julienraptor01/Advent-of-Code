@@ -21,7 +21,7 @@ async function fetchInputData(url) {
 
 /**
  * @param {string} input
- * @returns {Array<number>}
+ * @returns {Array<Number>}
  */
 function parseInput(input) {
 	const numbers = input.trim().split("\n").map(line => line.replace('L', '-').replace('R', '+')).map(Number);
@@ -29,8 +29,8 @@ function parseInput(input) {
 }
 
 /**
- * @param {Array<number>} rotationSequence
- * @returns {{password: number, actualPassword: number}}
+ * @param {Array<Number>} rotationSequence
+ * @returns {{password: Number, actualPassword: Number}}
  */
 function calculatePasswords(rotationSequence) {
 	let position = 50;
