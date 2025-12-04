@@ -1,12 +1,12 @@
 /**
  * The URL for fetching the input data
- * @constant {string}
+ * @constant {String}
  */
 const INPUT_URL = "https://adventofcode.com/2015/day/1/input";
 
 /**
- * @param {string} url
- * @returns {Promise<string>}
+ * @param {String} url
+ * @returns {Promise<String>}
  * @throws
  */
 async function fetchInputData(url) {
@@ -20,7 +20,7 @@ async function fetchInputData(url) {
 }
 
 /**
- * @param {string} input
+ * @param {String} input
  * @returns {Number}
  */
 function calculateFinalFloor(input) {
@@ -36,7 +36,7 @@ function calculateFinalFloor(input) {
 }
 
 /**
- * @param {string} input
+ * @param {String} input
  * @returns {Number}
  */
 function findBasementEnterPosition(input) {
